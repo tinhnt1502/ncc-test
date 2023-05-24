@@ -1,18 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 $background-color: #ffffff;
 $sidebar-color: #191718;
-$sidebar-hover-color: #5C5C5C;
+$sidebar-hover-color: #5c5c5c;
 $text-color: #aaa;
 
-html, body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: "Roboto";
 }
 
-ul, li {
-    padding: 0;
-    margin: 0;
+ul,
+li {
+  padding: 0;
+  margin: 0;
 }
 
 // app-root {

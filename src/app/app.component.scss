@@ -17,10 +17,6 @@ section {
   flex-direction: column;
 }
 
-.banner {
-  // width: 100%;
-}
-
 section.title {
   background-color: #efefef;
   padding: 38px;
@@ -41,12 +37,13 @@ section.title {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
+  padding-bottom: 150px;
   // flex-wrap: wrap;
 }
 
 .card {
   width: 50%;
-  margin: 0 20px;
+  margin: 20px;
   img {
     float: left;
     width: 75px;
@@ -76,8 +73,35 @@ section.title {
   margin-bottom: 0;
   margin-left: 150px;
   padding: 16px 0;
+  border-top: 1px solid #dedede;
   section {
     justify-content: flex-start;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 1000px) {
+  section {
+    margin: 15px 40px !important;
+  }
+  .card {
+    width: 100%;
+  }
+  .card {
+    &:first-child {
+      margin-left: 20px;
+    }
+
+    &:last-child {
+      margin-right: 20px;
+    }
+  }
+  .grid {
+    flex-direction: column;
+  }
+  section.title {
+    p {
+      padding: 0 20px;
+    }
   }
 }
