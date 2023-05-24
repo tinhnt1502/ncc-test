@@ -1,0 +1,23 @@
+@import '../../styles.scss';
+
+ul.sidebar-container {
+    margin-top: 0;
+    padding: 0;
+    width: 150px;
+    height: 100%;
+    background-color: $sidebar-color;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        color: $text-color;
+        border-bottom: 1px solid #5c5c5c;
+        font-size: 16px;
+        font-weight: 700;
+        &:hover {
+            background-color: $sidebar-hover-color;
+            color: white;
+        }
+    }
+}
